@@ -2,7 +2,7 @@
 # Объединяет все файлы region_*.bin в один full_mem.bin, сортируя по hex-адресу
 
 # Перейти в папку с дампом
-Set-Location "D:\Viзум\TZ\Python_detect\mem_dump"
+Set-Location "...\mem_dump"
 
 # Путь к выходному файлу
 $out = Join-Path (Get-Location) "full_mem.bin"
@@ -58,3 +58,4 @@ try {
 }
 
 Write-Host ("Merged -> " + $out) -ForegroundColor Green
+
