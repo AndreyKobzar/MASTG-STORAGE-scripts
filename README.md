@@ -1,4 +1,4 @@
-Выполняем скрипты по порядку и отфильтровываем findings_decoded.csv командой:
 We execute the scripts in order and filter findings_decoded.csv with the command:
+(Выполняем скрипты по порядку и отфильтровываем findings_decoded.csv командой для поиска JWT)
 cd \mem_dump\analysis
 Import-Csv findings_decoded.csv | Where-Object { $_.type -eq 'jwt' } to select by JWT
